@@ -82,7 +82,6 @@ function set_get_environment_type($file,$env){
 }
 
 $domain = $_SERVER['SERVER_NAME'];
-if ($domain)
 if (str_ends_with($domain, 'dev-wp.de')) {
     $file = locate_wp_config();
     $env = 'staging';
